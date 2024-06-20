@@ -101,7 +101,6 @@ void mover_blocos(Pilha *torres, int qtd_blocos) {
             printf("Movimento invalido! Bloco maior na torre de destino.\n");
         }
 
-        limpar_tela();
     }
 }
 
@@ -139,7 +138,7 @@ int main() {
         // Escolher a quantidade de blocos
         limpar_tela();
         printf("Escolha a quantidade de blocos para o jogo (de 4 a 7):\n");
-        printf("4: Besta (4 blocos)\n");
+        printf("4: Noob (4 blocos)\n");
         printf("5: Facil (5 blocos)\n");
         printf("6: Medio (6 blocos)\n");
         printf("7: Dificil (7 blocos)\n");
