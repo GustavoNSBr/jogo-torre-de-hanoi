@@ -47,7 +47,6 @@ void exibir_regras() {
     printf("3. Todos os discos devem ser movidos da torre A para a torre C.\n\n");
     printf("Pressione qualquer tecla para voltar ao menu inicial.\n");
     getchar();  // Captura o caractere extra do buffer
-    getchar();  // Espera pelo Enter do usuário
 }
 
 // Função para mover os blocos

@@ -13,4 +13,4 @@ int desempilhar(Pilha *p);
 int topo(Pilha *p);
 int tamanho(Pilha *p);
 
-#endif /* PILHA_H */
+#endif
