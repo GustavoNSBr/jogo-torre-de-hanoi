@@ -43,7 +43,7 @@ void exibir_regras() {
     limpar_tela();
     printf("\nRegras do Jogo:\n");
     printf("1. Apenas um disco pode ser movido por vez.\n");
-    printf("2. Um disco maior não pode ficar em cima de um disco menor.\n");
+    printf("2. Um disco maior nao pode ficar em cima de um disco menor.\n");
     printf("3. Todos os discos devem ser movidos da torre A para a torre C.\n\n");
     printf("Pressione qualquer tecla para voltar ao menu inicial.\n");
     getchar();  // Captura o caractere extra do buffer
