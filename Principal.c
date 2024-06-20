@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "Pilha.h"
 
-// Função para imprimir o estado das torres
 void imprimir(Pilha *torres, int qtd_blocos) {
     int i, j;
 
@@ -23,6 +22,33 @@ void imprimir(Pilha *torres, int qtd_blocos) {
     printf("|A|\t|B|\t|C|\n\n");
 }
 
+// Função para limpar a tela
+void limpar_tela() {
+    #ifdef _WIN32
+        system("pause");
+        system("cls");
+    #else
+        system("read -n1 -r -p 'Pressione qualquer tecla para continuar...' key");
+        system("clear");
+    #endif
+}
+
+// Função para validar a entrada do usuário
+int validar_opcao(int opcao, int max_opcao) {
+    return opcao >= 1 && opcao <= max_opcao;
+}
+
+// Função para exibir as regras do jogo
+void exibir_regras() {
+    limpar_tela();
+    printf("\nRegras do Jogo:\n");
+    printf("1. Apenas um disco pode ser movido por vez.\n");
+    printf("2. Um disco maior não pode ficar em cima de um disco menor.\n");
+    printf("3. Todos os discos devem ser movidos da torre A para a torre C.\n\n");
+    printf("Pressione qualquer tecla para voltar ao menu inicial.\n");
+    getchar();  // Captura o caractere extra do buffer
+    getchar();  // Espera pelo Enter do usuário
+}
 
 // Função para mover os blocos
 void mover_blocos(Pilha *torres, int qtd_blocos) {
