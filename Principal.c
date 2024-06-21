@@ -59,7 +59,7 @@ void mover_blocos(Pilha *torres, int qtd_blocos) {
         imprimir(torres, qtd_blocos);
 
         // Menu de opções
-        printf("Qual torre origem?\n");
+        printf("Qual a torre origem?\n");
         for (int i = 0; i < 3; i++) {
             printf("%d: Torre %c\n", i + 1, 'A' + i);
         }
